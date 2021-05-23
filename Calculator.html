@@ -7,11 +7,13 @@
 </head>
 
 <body>
-	<div class="title">Calculator</div>
-	<table class="table" border="2" >
+	<div class="container">
+	<h1>Calculator</h1>	
+		<div class="calculator">
+	<table align="center">
 	  <tr>
 		<td colspan="3"><input type="text" id="result"/></td>
-		<td><input type="button" value="C" onClick="clr()"</td>
+		<td><input type="button" value="c" onclick="clr()"/> </td>
 	 </tr>
 	 
 	<tr>
@@ -42,6 +44,8 @@
          <td><input type="button" value="*" onclick="dis('*')"/> </td>
 	</tr>
 	</table>
+		</div>
+	</div>
 	
 	<script>
          function dis(val)
@@ -60,7 +64,7 @@
          //function that clear the display
          function clr()
          {
-             document.getElementById("result").value = ""
+             document.getElementById("result").value = "0"
          }
 	</script>
 </body>
